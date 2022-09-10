@@ -1,3 +1,7 @@
+:root {
+  --backcolor: #1f1f1f;
+  --lettercolor: #f7f7f7;
+}
 h1,
 h2,
 h3 {
@@ -9,7 +13,7 @@ body {
   font-family: arial;
   display: grid;
   gap: 60px;
-  justify-items: end;
+  justify-items: center;
   margin-top: 60px;
 }
 
@@ -104,10 +108,6 @@ dt {
   display: flex;
   font-size: 1.2rem;
   font-weight: 600;
-}
-.imgIcone {
-  /* display: inline-block; */
-  background-color: aqua;
 }
 /* dl {
   gap: 60px;
@@ -213,5 +213,47 @@ footer {
   }
   body {
     justify-items: center;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background: var(--backcolor);
+  }
+  .titulo {
+    fill: var(--lettercolor);
+  }
+  body {
+    background-color: var(--backcolor);
+  }
+  nav ul li a {
+    background-color: grey;
+    color: white;
+    font-size: 1.125rem;
+    /* color: var(--lettercolor); */
+    font-weight: 500;
+    transition: 0.05s;
+    border: grey solid;
+  }
+  .verMais {
+    color: var(--lettercolor);
+  }
+  .textoConteudo {
+    background: #413f3f;
+    color: var(--lettercolor);
+  }
+  .bpoints {
+    background-color: #413f3f;
+    color: var(--lettercolor);
+  }
+  dl div:nth-child(odd) {
+    background-color: var(--backcolor);
+  }
+  footer {
+    background-color: var(--backcolor);
+    color: var(--lettercolor);
+  }
+  .vantagem {
+    background: none;
   }
 }
