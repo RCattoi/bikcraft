@@ -1,0 +1,217 @@
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+body {
+  background-color: #f7f7f7;
+  margin: 0px;
+  font-family: arial;
+  display: grid;
+  gap: 60px;
+  justify-items: end;
+  margin-top: 60px;
+}
+
+a {
+  text-decoration: none;
+  padding: 0.7rem 1.5rem;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+nav ul li a {
+  background-color: white;
+  color: black;
+  transition: 0.05s;
+  border: white solid;
+}
+a:hover,
+a:focus {
+  border: tomato solid;
+}
+.titulogrid::after {
+  content: "";
+  display: inline-block;
+  width: 45px;
+  height: 3px;
+  background-color: tomato;
+  position: absolute;
+  left: 96%;
+  top: 40px;
+}
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+}
+.bike {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
+}
+.textoConteudo {
+  padding: 2rem;
+  display: grid;
+  text-align: right;
+  background-color: white;
+  align-content: center;
+  gap: 20px;
+  position: relative;
+  justify-items: right;
+}
+
+p {
+  font-size: 1.2rem;
+}
+.verMais {
+  display: block;
+  background-color: tomato;
+  color: white;
+}
+
+.verMais:hover,
+.verMais:focus {
+  background-color: rgb(163, 5, 5);
+  border: rgb(163, 5, 5);
+}
+.vantagem {
+  background-image: url(./img/onda.svg);
+  object-fit: cover;
+  display: grid;
+  background-position: center;
+  padding-right: 2rem;
+  font-size: 4rem;
+  text-align: right;
+  place-items: center;
+  color: #c6c6c6;
+  /* background-position: center; */
+  margin: 120px auto;
+}
+.bpoints {
+  display: flex;
+  padding: 40px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+dt {
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.imgIcone {
+  /* display: inline-block; */
+  background-color: aqua;
+}
+/* dl {
+  gap: 60px;
+} */
+dt {
+  margin-top: 15px;
+}
+.tituloIcone::before {
+  content: url("./img/eletrica.svg");
+  display: flex;
+  margin-right: 10px;
+}
+.tituloMotor::before {
+  content: url("./img/rastreador.svg");
+  display: flex;
+  margin-right: 10px;
+}
+
+.tituloVelocita::before {
+  content: url("./img/velocidade.svg");
+  display: flex;
+  margin-right: 10px;
+}
+dl div {
+  padding: 1rem;
+  transition: 0.05s;
+}
+
+dl div:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+.textoIcone {
+  font-weight: 600;
+  margin-left: 2.1rem;
+}
+.section:hover {
+  border-left: tomato solid;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-right: 3px;
+}
+footer {
+  background-color: #f7f7f7;
+  display: flex;
+  width: calc(100vw - 65px);
+  padding: 1.5rem;
+  justify-content: center;
+}
+@media (max-width: 1133px) {
+  .conteudo {
+    padding: 0px 70px 50px 70px;
+  }
+  body {
+    gap: 20px;
+  }
+}
+@media (max-width: 935px) {
+  .vantagem {
+    font-size: 2rem;
+
+    margin: 50px auto;
+    padding: 50px auto;
+  }
+  .textoConteudo {
+    justify-items: left;
+    text-align: left;
+  }
+  .conteudo {
+    grid-template-columns: 1fr;
+    /* margin: 0 auto; */
+    padding: 50px;
+  }
+  .titulogrid::after {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 45px;
+    background-color: tomato;
+    position: absolute;
+    left: 46%;
+    top: 95%;
+  }
+  .vantagem {
+    font-size: 2rem;
+    margin: 0px auto;
+    padding: 50px;
+  }
+}
+
+@media (max-width: 777px) {
+  ul {
+    flex-wrap: wrap;
+    gap: 20px;
+    /* justify-items: center; */
+    justify-content: center;
+  }
+  li {
+    margin-top: 20px;
+  }
+  body {
+    justify-items: center;
+  }
+}
