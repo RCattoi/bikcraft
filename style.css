@@ -1,6 +1,8 @@
 :root {
   --backcolor: #1f1f1f;
+  /* --backcolor: #363636; */
   --lettercolor: #f7f7f7;
+  --second_bg_color: #413f3f;
 }
 h1,
 h2,
@@ -239,11 +241,11 @@ footer {
     color: var(--lettercolor);
   }
   .textoConteudo {
-    background: #413f3f;
+    background: var(--second_bg_color);
     color: var(--lettercolor);
   }
   .bpoints {
-    background-color: #413f3f;
+    background-color: var(--second_bg_color);
     color: var(--lettercolor);
   }
   dl div:nth-child(odd) {
@@ -254,6 +256,9 @@ footer {
     color: var(--lettercolor);
   }
   .vantagem {
-    background: none;
+    background-image: url("./img/onda_dark_mode.svg");
+  }
+  .titulo {
+    content: url("./img/bikecraft_dark_mode.svg");
   }
 }
